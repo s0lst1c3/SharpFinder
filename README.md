@@ -3,7 +3,7 @@
 Description: Searches for files matching specific criteria on readable shares within the domain.\
 Author: Gabriel Ryan (@s0lst1c3)\
 Contact: gabriel@specterops.io\
-License: GNU v3\
+License: GNU v3
 
 ## Overview
 
