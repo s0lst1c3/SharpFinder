@@ -9,6 +9,16 @@ License: GNU v3
 
 `SharpFinder` is a C# tool for enumerating files matching specific criteria on readable shares within an Active Directory domain. It is inspired by @harmj0uy's [Find-InterestingFile](https://powersploit.readthedocs.io/en/latest/Recon/Find-InterestingFile/) cmdlet, which is part of [PowerSploit](https://github.com/PowerShellMafia/PowerSploit). 
 
+## General Usage
+
+```
+SharpFinder --path=\\OVERMIND\C$
+```
+
+```
+SharpFinder --input-file=directory-list.txt
+```
+
 ## Filtering Results
 
 By default, `SharpFinder` will return all files that it encounters. No keyword, ACL, or extension-based filtering will be performed. The subsections that follow will go over how to tame the output of SharpFinder to yield more precise results.
