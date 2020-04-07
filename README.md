@@ -5,6 +5,8 @@ Author: Gabriel Ryan ([@s0lst1c3](https://twitter.com/s0lst1c3/))\
 Contact: gabriel[aT>specterops.io\
 License: GNU v3
 
+Credit for the DLL import code goes to [@djhohnstein](https://twitter.com/djhohnstein/).
+
 ## Overview
 
 SharpFinder is a C# tool for enumerating files matching specific criteria on readable shares within an Active Directory domain. It is inspired by @harmj0uy's [Find-InterestingFile](https://powersploit.readthedocs.io/en/latest/Recon/Find-InterestingFile/) cmdlet, which is part of [PowerSploit](https://github.com/PowerShellMafia/PowerSploit). 
