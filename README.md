@@ -7,22 +7,22 @@ License: GNU v3
 
 ## Overview
 
-`SharpFinder` is a C# tool for enumerating files matching specific criteria on readable shares within an Active Directory domain. It is inspired by @harmj0uy's [Find-InterestingFile](https://powersploit.readthedocs.io/en/latest/Recon/Find-InterestingFile/) cmdlet, which is part of [PowerSploit](https://github.com/PowerShellMafia/PowerSploit). 
+SharpFinder is a C# tool for enumerating files matching specific criteria on readable shares within an Active Directory domain. It is inspired by @harmj0uy's [Find-InterestingFile](https://powersploit.readthedocs.io/en/latest/Recon/Find-InterestingFile/) cmdlet, which is part of [PowerSploit](https://github.com/PowerShellMafia/PowerSploit). 
 
 ## General Usage
 
-At it's core, `SharpFinder` works like this:
-1. You provide `SharpFinder` with one or more directory paths
-2. `SharpFinder` enumerates all readable or writeable files in the provided directories
+At it's core, SharpFinder works like this:
+1. You provide SharpFinder with one or more directory paths
+2. `harpFinder enumerates all readable or writeable files in the provided directories
 Generally, you'll want to add filters to make `SharpFinder` to look for specific types of files, but we'll go over that later.
 
-To tell `SharpFinder` to enumerates files within a single directory, use the `--path=` flag as shown in the following example:
+To tell SharpFinder to enumerates files within a single directory, use the `--path=` flag as shown in the following example:
 
 ```
 SharpFinder --path=\\OVERMIND\C$
 ```
 
-To pass `SharpFinder` a text file containing directories to search through, use the `--input-file=` flag as shown in the example below:
+To pass SharpFinder a text file containing directories to search through, use the `--input-file=` flag as shown in the example below:
 
 ```
 SharpFinder --input-file=directory-list.txt
@@ -30,7 +30,7 @@ SharpFinder --input-file=directory-list.txt
 
 ## Filtering Results
 
-By default, `SharpFinder` will return all files that it encounters. No keyword, ACL, or extension-based filtering will be performed. The subsections that follow will go over how to tame the output of SharpFinder to yield more precise results.
+By default, SharpFinder will return all files that it encounters. No keyword, ACL, or extension-based filtering will be performed. The subsections that follow will go over how to tame the output of SharpFinder to yield more precise results.
 
 ### Keyword-based Filtering
 
