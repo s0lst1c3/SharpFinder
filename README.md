@@ -1,8 +1,8 @@
 # SharpFinder
 
 Description: Searches for files matching specific criteria on readable shares within the domain.\
-Author: Gabriel Ryan (@s0lst1c3)\
-Contact: gabriel@specterops.io\
+Author: Gabriel Ryan ([@s0lst1c3](https://twitter.com/s0lst1c3/))\
+Contact: gabriel[aT>specterops.io\
 License: GNU v3
 
 ## Overview
@@ -11,9 +11,18 @@ License: GNU v3
 
 ## General Usage
 
+At it's core, `SharpFinder` works like this:
+1. You provide `SharpFinder` with one or more directory paths
+2. `SharpFinder` enumerates all readable or writeable files in the provided directories
+Generally, you'll want to add filters to make `SharpFinder` to look for specific types of files, but we'll go over that later.
+
+To tell `SharpFinder` to enumerates files within a single directory, use the `--path=` flag as shown in the following example:
+
 ```
 SharpFinder --path=\\OVERMIND\C$
 ```
+
+To pass `SharpFinder` a text file containing directories to search through, use the `--input-file=` flag as shown in the example below:
 
 ```
 SharpFinder --input-file=directory-list.txt
@@ -34,7 +43,7 @@ SharpFinder --input-file=directory-list.txt --keywords=credentials
 You can also specify a list of keywords to the `--keyword=` flag by separating them with a comma, as shown in the next example:
 
 ```
-SharpFinder --input-file=directory-list.txt --keywords=ceds,credential,admin,password
+SharpFinder --input-file=directory-list.txt --keywords=creds,credential,admin,password
 ```
 
 ### Extension-based Filtering
